@@ -1,16 +1,15 @@
-
-
 h1 {
-    margin: 0;
-    text-align: center;
-    color: cadetblue;
-    padding: 3px 65px;
-    border: rgb(70, 64, 64) 2px solid;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 40px;
-    padding: 50px;
-}
+        margin: 0;
+        text-align: center;
+        color: cadetblue;
+        padding: 3px 65px;
+        border: rgb(70, 64, 64) 2px solid;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 60px;
+        padding: 50px;
+        background-color: rgb(46, 105, 161);
+    }
 
 body {
     font-family: sans-serif;
