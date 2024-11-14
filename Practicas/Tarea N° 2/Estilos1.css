@@ -23,7 +23,7 @@ body {
     font-size: 1.2rem;
     min-height: 100vh;
     padding: 20px;
-}
+    }
 
 .grid-container>* {
     box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
@@ -78,6 +78,7 @@ li{
         text-align: right;
         grid-area: footer;
         background-color: rgba(237, 123, 67, 0.74);
+            
     }
 
     @media (min-width:768px) {
