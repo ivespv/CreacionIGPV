@@ -10,27 +10,30 @@
 
 <body>
     <div class="contenedor">
-        <button onclick="Cambio" class="boton2">Atras</button>
-        <ol class="menu">
-            <div class="imagen">
-                <li><IMG src="Imagenes/1.jpg" alt="imagen 1 de 10"></IMG></li>
-                <li><IMG src="Imagenes/2.jpg" alt="imagen 2 de 10"></IMG></li>
-                <li><IMG src="Imagenes/3.jpg" alt="imagen 3 de 10"></IMG></li>
-                <li><IMG src="Imagenes/4.jpg" alt="imagen 4 de 10"></IMG></li>
-                <li><IMG src="Imagenes/5.jpg" alt="imagen 5 de 10"></IMG></li>
-                <li><IMG src="Imagenes/6.jpg" alt="imagen 6 de 10"></IMG></li>
-                <li><IMG src="Imagenes/7.jpg" alt="imagen 7 de 10"></IMG></li>
-                <li><IMG src="Imagenes/8.jpg" alt="imagen 8 de 10"></IMG></li>
-                <li><IMG src="Imagenes/9.jpg" alt="imagen 9 de 10"></IMG></li>
-                <li><IMG src="Imagenes/10.jpg" alt="imagen 10 de 10"></IMG></li>
-            </div>
-        </ol>
-        <button onclick="Cambio" class="boton1">Adelante</button>
+        <button onclick="cambio()" class="boton2">Atras</button>
+        
+        <IMG src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></IMG></li>
+        
+        <button onclick="adelante()" class="boton1">Adelante</button>  
     </div>
      
-    <script>
-        var objeto=document.querySelector('li')
-        console.log(objeto)
+    <script type="text/javascript">
+        var galeria = "i1";
+        function cambio(){
+            var imagen = document.getElementById("img1");
+            
+            if(galeria == "i1"){
+                imagen.src = "imagenes/2.jpg";
+                galeria = "i2";
+            }
+            else{
+                imagen.src = "imagenes/1.jpg";
+                galeria = "i1"
+            }    
+            }
+
+        
+
     </script>
 
 

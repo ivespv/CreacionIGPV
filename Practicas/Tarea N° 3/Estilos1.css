@@ -25,10 +25,10 @@ body {
     padding: 20px;
     }
 .contenedor{
-      outline: 2px solid rgb(33, 37, 143);
+      outline: 4px solid rgb(33, 37, 143);
       background-color: beige;
-      width: 100vh;
-      height: 100vh;
+      width: 1500px;
+      height: 1000px;
       margin: 5%;
       display: flex;
       justify-content: center;
