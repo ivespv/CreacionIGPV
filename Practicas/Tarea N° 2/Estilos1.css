@@ -59,6 +59,8 @@ li{
     .navbar {
         grid-area: navbar;
         background-color: rgba(188, 146, 207, 0.74);
+        justify-content: center;
+        justify-items: center;
     }
 
     .sidebar {

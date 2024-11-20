@@ -48,3 +48,6 @@ body {
     border: 1px solid aliceblue;
     padding: 60px;
 }
+li{
+    list-style-type: none;
+}
