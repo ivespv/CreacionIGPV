@@ -10,28 +10,60 @@
 
 <body>
     <div class="contenedor">
-        <button onclick="cambio()" class="boton2">Atras</button>
+        <button onclick="anterior()" class="boton2">Atras</button>
         
-        <IMG src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></IMG></li>
+          <img src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></img>
+     
+        <button onclick="adelante();" class="boton1">Adelante</button>  
         
-        <button onclick="adelante()" class="boton1">Adelante</button>  
+        
     </div>
      
     <script type="text/javascript">
-        var galeria = "i1";
-        function cambio(){
-            var imagen = document.getElementById("img1");
-            
-            if(galeria == "i1"){
-                imagen.src = "imagenes/2.jpg";
-                galeria = "i2";
-            }
-            else{
-                imagen.src = "imagenes/1.jpg";
-                galeria = "i1"
-            }    
-            }
+        let imagen1 = document.getElementById('Cont')
 
+        const fotos = new Array();
+        fotos[0] = ['Imagenes/1.jpg','1 de 10'], 
+        fotos[1] = ['Imagenes/2.jpg','2 de 10'],
+        fotos[2] = ['Imagenes/3.jpg','3 de 10'],
+        fotos[3] = ['Imagenes/4.jpg','4 de 10'],
+        fotos[4] = ['Imagenes/5.jpg','5 de 10'],
+        fotos[5] = ['Imagenes/6.jpg','6 de 10'],
+        fotos[6] = ['Imagenes/7.jpg','7 de 10'],
+        fotos[7] = ['Imagenes/8.jpg','8 de 10'],
+        fotos[8] = ['Imagenes/9.jpg','9 de 10'],
+        fotos[9] = ['Imagenes/10.jpg','10 de 10'];
+        
+          
+       var foto1 = 1;
+       
+        function adelante(){
+        var imagen = document.getElementById("img1");
+        for(i=0; i<fotos.length;i++){
+            if (foto1 == 1) {
+                imagen.src = fotos[i]   
+                console.log(imagen)
+            }
+        } 
+        }
+       
+
+
+
+            
+        
+
+
+            
+
+
+        
+        
+        
+        
+        
+        
+        
         
 
     </script>
