@@ -24,6 +24,10 @@ body {
     min-height: 100vh;
     padding: 20px;
     }
+.cont-ext{
+    width: 500px;
+    height: 500px;
+}
 .contenedor{
       outline: 4px solid rgb(33, 37, 143);
       background-color: beige;
@@ -43,11 +47,12 @@ body {
     
 }
 .boton2{
-    background-color: rgb(89, 56, 179);
+    background-color: rgb(136, 129, 134);
     color:azure;
     font-size: 60px;
     border: 1px solid aliceblue;
     padding: 60px;
+  
 }
 li{
     list-style-type: none;

@@ -9,124 +9,61 @@
 </head>
 
 <body>
+    <div class="cont-ext">
+
     <div class="contenedor">
-        <button onclick="anterior()" class="boton2">Atras</button>
+        <button onclick="Atras()" class="boton2" id="bot-AT" disabled>Atras</button>
         
           <img src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></img>
      
-        <button onclick="adelante();" id="botA" class="boton1">Adelante</button> 
-        <p id="etiqueta">imagen de </p>
+        <button class="boton1" onclick="Adelante()" id="bot-A" >Adelante</button> 
+    </div>    
+        <p id="etiqueta">Galeria de Imagenes</p>
         
     </div>
      
     <script type="text/javascript">
         let imagen1 = document.getElementById('Cont');
-        const imge1 = document.getElementById("img1");
-        const eti = document.getElementById("etiqueta");
-        const boa = document.getElementById("botA");
+        const imge1 = document.getElementById('img1');
+        const eti = document.getElementById('etiqueta');
+        const BoA = document.getElementById('bot-A');
+        const BoAT = document.getElementById('bot-AT');
         const galeria = ["Imagenes/1.jpg", "Imagenes/2.jpg", "Imagenes/3.jpg","Imagenes/4.jpg","Imagenes/4.jpg","Imagenes/5.jpg","Imagenes/6.jpg","Imagenes/7.jpg","Imagenes/8.jpg",
             "Imagenes/9.jpg","Imagenes/10.jpg",
         ];
                   
        let ft = 0;
-       let mat = galeria.length    
+
+       let mat = galeria.length;  
        
-        function adelante(){
-        imge1.src = galeria[ft]
-       /* switch (ft) { 
-            case ft: 0*/
-               
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-               
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                if (ft == "10"){
-                    
-                     boa = false;
-                     alert("error")
-                }
-
-
-             /*   break;*/
-           /* case ft: 1
-                
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 2
-               
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 3
-               
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 4
-           
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 5
-            
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 6
-          
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 7
-           
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 8
-               
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 9
+       BoA.style.background = 'green';
+       
         
-                imge1.src = galeria[ft]
-                ft++
-                console.log(ft)
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 10
-             
-                imge1.src = galeria[ft]
-                ft = 0
-                console.log(ft)
-              
-                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            default:
-            imge1.src = imagenes[0]
-            alert("mierda11")
-
-            ft = 0
-        } */
-    }
+       
+        function Adelante(){
+                imge1.src = galeria[ft];
+                ft++;
+                console.log(ft);
+                eti.textContent = `Imagen ${ft} de ${mat-1}`;
+                if (ft == "10"){
+                     BoA.disabled = true;
+                     BoA.style.background = 'grey'
+                     BoAT.disabled = false;
+                     BoAT.style.background = 'green'
+                }
+        } 
+        function Atras(){
+                imge1.src = galeria[ft];
+                ft--;
+                console.log(ft);
+                eti.textContent = `Imagen ${ft} de ${mat-1}`;
+                if (ft == "0"){
+                     BoA.disabled = false;
+                     BoA.style.background = 'grey'
+                     BoAT.disabled = true;
+                     BoAT.style.background = 'green'
+                }
+        }
     </script>
 </body>
 </html>
