@@ -14,38 +14,96 @@
         
           <img src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></img>
      
-        <button onclick="adelante();" class="boton1">Adelante</button>  
-        
+        <button onclick="adelante();" class="boton1">Adelante</button> 
+        <p id="etiqueta">imagen de </p>
         
     </div>
      
     <script type="text/javascript">
         let imagen1 = document.getElementById('Cont')
-
-        const fotos = new Array();
-        fotos[0] = ['Imagenes/1.jpg','1 de 10'], 
-        fotos[1] = ['Imagenes/2.jpg','2 de 10'],
-        fotos[2] = ['Imagenes/3.jpg','3 de 10'],
-        fotos[3] = ['Imagenes/4.jpg','4 de 10'],
-        fotos[4] = ['Imagenes/5.jpg','5 de 10'],
-        fotos[5] = ['Imagenes/6.jpg','6 de 10'],
-        fotos[6] = ['Imagenes/7.jpg','7 de 10'],
-        fotos[7] = ['Imagenes/8.jpg','8 de 10'],
-        fotos[8] = ['Imagenes/9.jpg','9 de 10'],
-        fotos[9] = ['Imagenes/10.jpg','10 de 10'];
-        
-          
-       var foto1 = 1;
+        const imge1 = document.getElementById("img1")
+        const eti = document.getElementById("etiqueta")
+        const galeria = ["Imagenes/1.jpg", "Imagenes/2.jpg", "Imagenes/3.jpg","Imagenes/4.jpg","Imagenes/4.jpg","Imagenes/5.jpg","Imagenes/6.jpg","Imagenes/7.jpg","Imagenes/8.jpg",
+            "Imagenes/9.jpg","Imagenes/10.jpg",
+        ];
+                  
+       let ft = 0;
+       let mat = galeria.length    
        
         function adelante(){
-        var imagen = document.getElementById("img1");
-        for(i=0; i<fotos.length;i++){
-            if (foto1 == 1) {
-                imagen.src = fotos[i]   
-                console.log(imagen)
-            }
+        imge1.src = galeria[ft]
+        switch (ft) { 
+            case ft: 0
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 1
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 2
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 3
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 4
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 5
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 6
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 7
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 8
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 9
+                imge1.src = galeria[ft]
+                ft++
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            case ft: 10
+                imge1.src = galeria[ft]
+                ft = 0
+                console.log(ft)
+                eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
+                break;
+            default:
+            imge1.src = imagenes[0]
+            ft = 0
         } 
-        }
+    }
        
 
 
