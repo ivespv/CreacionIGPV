@@ -11,7 +11,7 @@
 <body>
     <div class="cont-ext">
         <div class="contenedor">
-            <button onclick="Atras()" class="boton2" id="bot-AT" disabled>Atras</button>
+            <button onclick="Atras()" class="boton2" id="bot-AT">Atras</button>
             <img src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></img>
             <button class="boton1" onclick="Adelante()" id="bot-A" >Adelante</button> 
         </div>    
@@ -39,6 +39,8 @@
         function Adelante(){
                 imge1.src = galeria[ft];
                 ft++;
+                BoAT.disabled = false;
+                BoAT.style.background = 'green'
                 console.log(ft);
                 eti.textContent = `Imagen ${ft} de ${mat-1}`;
                 if (ft == "10"){
@@ -51,13 +53,15 @@
         function Atras(){
                 imge1.src = galeria[ft];
                 ft--;
+                BoA.disabled = false;
+                BoA.style.background = 'green';
                 console.log(ft);
                 eti.textContent = `Imagen ${ft} de ${mat-1}`;
                 if (ft == "0"){
-                     BoA.disabled = false;
-                     BoA.style.background = 'grey'
                      BoAT.disabled = true;
-                     BoAT.style.background = 'green'
+                     BoAT.style.background = 'grey'
+                     BoA.disabled = false;
+                     BoA.style.background = 'green'
                 }
         }
     </script>
