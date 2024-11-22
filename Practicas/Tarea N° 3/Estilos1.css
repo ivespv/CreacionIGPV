@@ -25,19 +25,31 @@ body {
     padding: 20px;
     }
 .cont-ext{
-    width: 500px;
-    height: 500px;
+    outline: 4px solid rgb(33, 37, 143);
+    background-color: beige;
+    width: 1800px;
+    height: 1200px;
+    padding-top: 2px;
+    display: flexbox;
 }
 .contenedor{
-      outline: 4px solid rgb(33, 37, 143);
-      background-color: beige;
-      width: 2000px;
-      height: 1000px;
+    background-color: beige;
+      width: 1500px;
+      height: 850px;
       margin: 5%;
       display: flex;
       justify-content: center;
       align-items: center;
+      
 }
+.texto{
+    color:rgb(138, 27, 27);
+    font-size: 50px;
+    border: 1px solid aliceblue;
+    padding-left: 630px;
+    padding-bottom: 150px;
+}
+
 .boton1{
     background-color: rgb(22, 105, 19);
     color:azure;
