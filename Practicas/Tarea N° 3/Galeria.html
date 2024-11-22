@@ -14,15 +14,16 @@
         
           <img src="Imagenes/1.jpg" alt="imagen 1 de 10" id="img1" width="700"></img>
      
-        <button onclick="adelante();" class="boton1">Adelante</button> 
+        <button onclick="adelante();" id="botA" class="boton1">Adelante</button> 
         <p id="etiqueta">imagen de </p>
         
     </div>
      
     <script type="text/javascript">
-        let imagen1 = document.getElementById('Cont')
-        const imge1 = document.getElementById("img1")
-        const eti = document.getElementById("etiqueta")
+        let imagen1 = document.getElementById('Cont');
+        const imge1 = document.getElementById("img1");
+        const eti = document.getElementById("etiqueta");
+        const boa = document.getElementById("botA");
         const galeria = ["Imagenes/1.jpg", "Imagenes/2.jpg", "Imagenes/3.jpg","Imagenes/4.jpg","Imagenes/4.jpg","Imagenes/5.jpg","Imagenes/6.jpg","Imagenes/7.jpg","Imagenes/8.jpg",
             "Imagenes/9.jpg","Imagenes/10.jpg",
         ];
@@ -32,106 +33,100 @@
        
         function adelante(){
         imge1.src = galeria[ft]
-        switch (ft) { 
-            case ft: 0
+       /* switch (ft) { 
+            case ft: 0*/
+               
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
+               
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
-                break;
-            case ft: 1
+                if (ft == "10"){
+                    
+                     boa = false;
+                     alert("error")
+                }
+
+
+             /*   break;*/
+           /* case ft: 1
+                
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 2
+               
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 3
+               
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 4
+           
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 5
+            
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 6
+          
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 7
+           
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 8
+               
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 9
+        
                 imge1.src = galeria[ft]
                 ft++
                 console.log(ft)
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             case ft: 10
+             
                 imge1.src = galeria[ft]
                 ft = 0
                 console.log(ft)
+              
                 eti.textContent = `Imagen ${ft} de ${galeria.length-1}`;
                 break;
             default:
             imge1.src = imagenes[0]
+            alert("mierda11")
+
             ft = 0
-        } 
+        } */
     }
-       
-
-
-
-            
-        
-
-
-            
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-
     </script>
-
-
-
-
-
-
-
 </body>
-
 </html>
