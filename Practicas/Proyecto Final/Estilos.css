@@ -14,6 +14,7 @@ h1 {
         font-size: 50px;
         padding: 10px;
         background-color: rgb(46, 105, 161);
+        font-weight: bold;
     }
 body {
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -25,7 +26,7 @@ nav{
     /*outline: 1px solid goldenrod;*/
 }
 ul{
-    outline: 1px solid rgb(94, 164, 167);
+    /*outline: 1px solid rgb(94, 164, 167);*/
     list-style: none;
     padding: 0;
     margin: 0;
@@ -34,7 +35,7 @@ ul{
     text-align: center;
     }
 li{
-    outline: 1px solid rgb(57, 133, 163);
+    /*outline: 1px solid rgb(57, 133, 163);*/
     font-size: 18px;
     width: 150px;
     text-align: center;
@@ -50,15 +51,26 @@ a:hover{
     background: #1ac5f9;
     color: 0f0f0
 }
+.global{
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    padding-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+ }
 .cont-ext{
-    outline: 4px solid rgb(33, 37, 143);
+    /*outline: 4px solid rgb(33, 37, 143);*/
     background-color: beige;
     width: 400px;
     height: 3%;
     padding-top: 2px;
     overflow: hidden;
     margin-left: 1rem;
-
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px #000000;
     
 }
 .contenedor{
@@ -72,9 +84,25 @@ a:hover{
       overflow: hidden;
 }
 .texto{
+    font-weight: bolder;
     color:rgb(138, 27, 27);
     font-size: 15px;
-    border: 1px solid aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.texto1{
+    color:rgb(44, 27, 138);
+    font-size: 13px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.texto2{
+    color:rgb(27, 138, 77);
+    font-size: 15px;
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
@@ -88,8 +116,11 @@ img{
 img:hover{
     transform: scale(1.5);
 }
-.global{
-    display: flex;
-    position: fixed;
-    padding-top: 15px;
+
+/*@media (min-width:1024px) {
+    .global{
+        overflow: scroll;    
+    }*/
+.cont-ext:hover{
+    transform: scale(1.5);
 }
