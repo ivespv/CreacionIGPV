@@ -5,7 +5,7 @@
 }
 h1 {
         margin: 0;
-        text-align: center;
+        text-align: left;
         color: cadetblue;
         padding: 3px 15px;
         border: rgb(70, 64, 64) 2px solid;
@@ -15,13 +15,17 @@ h1 {
         padding: 10px;
         background-color: rgb(46, 105, 161);
         font-weight: bold;
+        width: 100%;
     }
 body {
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Noto Sans", sans-serif;
         font-size: 1.2rem;
-        background-color: #4D6B6E;
+        background-color: #f4f5f5;
 }
-    
+
+header{
+    display: flex;
+}    
 nav{
     /*outline: 1px solid goldenrod;*/
 }
@@ -52,6 +56,7 @@ a:hover{
     color: 0f0f0
 }
 .global{
+    
     padding: 10px;
     display: flex;
     position: fixed;
@@ -60,6 +65,15 @@ a:hover{
     flex-wrap: wrap;
     text-align: center;
  }
+ .body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #021b79;
+}
+.body::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255, .2);
+    border-radius: 18px;
+    border-right: 2px solid #021b79;
+}
 .cont-ext{
     /*outline: 4px solid rgb(33, 37, 143);*/
     background-color: beige;
@@ -82,6 +96,7 @@ a:hover{
       justify-content: center;
       align-items: center;
       overflow: hidden;
+      
 }
 .texto{
     font-weight: bolder;
@@ -106,12 +121,17 @@ a:hover{
     padding-left: 70px;
     padding-right: 70px;
     text-align: center;
+    margin-bottom: 10px;
 }
 img{
     width: 150px;
     transition: .4s ease;
     cursor: pointer;
-   
+    object-fit: cover;
+    gap: 15px;
+}
+div{
+    border-radius: 20px 20px 0px 0px; 
 }
 img:hover{
     transform: scale(1.5);
@@ -121,6 +141,21 @@ img:hover{
     .global{
         overflow: scroll;    
     }*/
-.cont-ext:hover{
-    transform: scale(1.5);
+
+
+.carrito{
+    filter: invert(100%);
+    width: 45;
+    height: auto;
 }
+.boton{
+    background-color: #bbdde0;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;    
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+

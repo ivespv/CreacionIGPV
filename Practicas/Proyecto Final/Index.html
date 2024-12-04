@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
     <title>SOFTCORP</title>
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
     <header>
+        <img src="Imagenes/logo.jpg" alt="logo">
         <h1>SOFTCORP</h1>
+        
+        
     </header>
     
     <nav>
@@ -17,19 +24,20 @@
             <li><a href="">PRODUCTOS</a></li>
             <li><a href="">CARRITO</a></li>
             <li><a href="">CONTACTOS</a></li>
-            <li><a href="">MIS HOBBIES</a></li>
         </ul>
     </nav>
     <main>
         <div class="global">
             <div class="cont-ext">
-                <div class="contenedor">
+                <div class="contenedor" id="contenedor">
                     <img src="Imagenes/FortiGate 100F.jpg" alt="FortiGate 100F" id="img1"></img>
                     <img src="Imagenes/fotigate.webp" alt="FortiGate100" id="img1"></img>
                 </div>
                 <p class="texto">FORTIGATE 100F</p>    
                 <p class="texto1">Data Security Firewall, Security: Ngfw, Rack Mount</p>
                 <p class="texto2">Costo 15000 Bs.</p>
+                <button class="boton">COMPRAR</button>
+                
             </div>
             <div class="cont-ext">
                 <div class="contenedor">
@@ -39,15 +47,17 @@
                 <p class="texto">Router Cisco 4451-X</p>    
                 <p class="texto1">Implemente servicios de red integrados clave para su sucursal en minutos, de forma virtual o local, sin sacrificar el rendimiento. (SaaS).  </p>
                 <p class="texto2">Costo 49000 Bs.</p>
+                <button class="boton">COMPRAR</button>
             </div>
             <div class="cont-ext">
                 <div class="contenedor">
                     <img src="Imagenes/s1.jpg" alt="FortiGate 100F" id="img1"></img>
                     <img src="Imagenes/s2.jpg" alt="FortiGate100" id="img1"></img>
-                </div>    
+                </div>  
                 <p class="texto">Switches Cisco 9300</p>    
                 <p class="texto1">C9300X-48HX. Diseñado para acceso seguro de alta velocidad a Wi-Fi 6/6E y más, con PoE de 90 W para</p>
                 <p class="texto2">Costo 27000 Bs.</p>
+                <button>COMPRAR</button>
             </div>
             <div class="cont-ext">
                 <div class="contenedor">
@@ -57,8 +67,11 @@
                 <p class="texto">Central Telefonica IP CISCO C2921-CME-SRST/K9</p>    
                 <p class="texto1">El enrutador de servicios integrados Cisco 2921 provee una solución colaborativa de negocios segura para la comunicación de telefonía y de datos.</p>
                 <p class="texto2">Costo 27000 Bs.</p>
+                <button>COMPRAR</button>
             </div>
         </div>
+        <script src="codigo.js"></script>
+
     </main>
   </body>
 </html>
