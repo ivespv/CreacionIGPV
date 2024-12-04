@@ -56,9 +56,10 @@ a:hover{
     width: 400px;
     height: 3%;
     padding-top: 2px;
-    display: flexbox;
     overflow: hidden;
     margin-left: 1rem;
+
+    
 }
 .contenedor{
     background-color: beige;
@@ -82,12 +83,13 @@ img{
     width: 150px;
     transition: .4s ease;
     cursor: pointer;
+   
 }
 img:hover{
     transform: scale(1.5);
 }
 .global{
     display: flex;
-    padding: 10px;
-    
+    position: fixed;
+    padding-top: 15px;
 }
